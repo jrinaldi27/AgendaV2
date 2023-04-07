@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AgendaV2.Entidades
 {
-    class Agenda
+    public class Agenda
     {
         private string _nombre;
         private string _tipo;
@@ -30,7 +30,7 @@ namespace AgendaV2.Entidades
 
         public void AgregarContacto(Contacto c)
         {
-            if (_contactos.Count < _cantidadMaximaDeContactos)
+            if (_contactos.Count <= _cantidadMaximaDeContactos)
             {
                 _contactos.Add(c);
 
@@ -49,17 +49,23 @@ namespace AgendaV2.Entidades
                 if (c.Codigo == codigo)
                 {
                     _contactos.Remove(c);
-                    Eliminados = 1;
-                    Console.WriteLine("Se elimino correctamente al contacto con el codigo ", codigo);
 
+                    Console.WriteLine("Se elimino correctamente al contacto con el codigo " + codigo);
+                    Eliminados = 1;
+                    break;
                 }
-                else if (Eliminados == 0)
-                {
-                    Console.WriteLine("No se pudo eliminar el contacto");
-                }
-            
+
+
 
             }
+            if (Eliminados == 0)
+            {
+                Console.WriteLine("No se pudo eliminar el contacto");
+            }
+
+
+
+
         }
 
         public Contacto TraerContactoFrecuente()
@@ -75,7 +81,16 @@ namespace AgendaV2.Entidades
                 }
             }
 
+
             return _contactos.Find(c => c.Codigo == codigoContactoMasFrecuente);
+        }
+
+        public void ListarContactos()
+        {
+            foreach(Contacto c in _contactos)
+            {
+                Console.WriteLine(c.ToString());
+            }
         }
     }
 }

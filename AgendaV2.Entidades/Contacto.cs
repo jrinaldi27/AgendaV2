@@ -40,14 +40,21 @@ namespace AgendaV2.Entidades
 
         public int edad()
         {
-            double dias = (DateTime.Now - FechaNacimiento).TotalDays;
+            Double calculo = (DateTime.Now - _fechaNacimiento).TotalDays;
+            int edad = Convert.ToInt32(calculo) / 365;
 
-            return Convert.ToInt32(dias / 365);
+            return edad;
         }
 
         public void llamar()
         {
             _llamadas++;
+        }
+
+        public string ToString()
+        {
+            return string.Format("Codigo de contacto: {0} \nNombre y apellido: {1} {2} \nTelefono: {3}  \ndireccion: {4} \nllamadas: {5} ",
+                                  _codigo, _nombre, _apellido, _telefono, _direccion, _llamadas);
         }
     }
 }
