@@ -1,0 +1,6 @@
+C:\Users\julia\source\repos\AgendaV2\AgendaV2.Entidades\bin\Debug\AgendaV2.Entidades.dll
+C:\Users\julia\source\repos\AgendaV2\AgendaV2.Entidades\bin\Debug\AgendaV2.Entidades.pdb
+C:\Users\julia\source\repos\AgendaV2\AgendaV2.Entidades\obj\Debug\AgendaV2.Entidades.csproj.AssemblyReference.cache
+C:\Users\julia\source\repos\AgendaV2\AgendaV2.Entidades\obj\Debug\AgendaV2.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\julia\source\repos\AgendaV2\AgendaV2.Entidades\obj\Debug\AgendaV2.Entidades.dll
+C:\Users\julia\source\repos\AgendaV2\AgendaV2.Entidades\obj\Debug\AgendaV2.Entidades.pdb

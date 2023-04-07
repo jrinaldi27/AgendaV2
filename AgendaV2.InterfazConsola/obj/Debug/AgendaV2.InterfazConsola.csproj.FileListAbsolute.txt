@@ -1,0 +1,10 @@
+C:\Users\julia\source\repos\AgendaV2\AgendaV2.InterfazConsola\bin\Debug\AgendaV2.InterfazConsola.exe.config
+C:\Users\julia\source\repos\AgendaV2\AgendaV2.InterfazConsola\bin\Debug\AgendaV2.InterfazConsola.exe
+C:\Users\julia\source\repos\AgendaV2\AgendaV2.InterfazConsola\bin\Debug\AgendaV2.InterfazConsola.pdb
+C:\Users\julia\source\repos\AgendaV2\AgendaV2.InterfazConsola\bin\Debug\AgendaV2.Entidades.dll
+C:\Users\julia\source\repos\AgendaV2\AgendaV2.InterfazConsola\bin\Debug\AgendaV2.Entidades.pdb
+C:\Users\julia\source\repos\AgendaV2\AgendaV2.InterfazConsola\obj\Debug\AgendaV2.InterfazConsola.csproj.AssemblyReference.cache
+C:\Users\julia\source\repos\AgendaV2\AgendaV2.InterfazConsola\obj\Debug\AgendaV2.InterfazConsola.csproj.CoreCompileInputs.cache
+C:\Users\julia\source\repos\AgendaV2\AgendaV2.InterfazConsola\obj\Debug\AgendaV2.InterfazConsola.csproj.CopyComplete
+C:\Users\julia\source\repos\AgendaV2\AgendaV2.InterfazConsola\obj\Debug\AgendaV2.InterfazConsola.exe
+C:\Users\julia\source\repos\AgendaV2\AgendaV2.InterfazConsola\obj\Debug\AgendaV2.InterfazConsola.pdb
