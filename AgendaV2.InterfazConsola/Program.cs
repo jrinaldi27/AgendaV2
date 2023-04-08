@@ -11,24 +11,56 @@ namespace AgendaV2.InterfazConsola
     {
         static void Main(string[] args)
         {
-            Agenda a = new Agenda("Agenda de Julian", "comun", 3);
-            Contacto contacto = new Contacto(1022, "Julian", "Rinaldi", "1159474448", "P124", Convert.ToDateTime("08/05/2001"));
-            Contacto contacto2 = new Contacto(1023, "Sancho", "Panza", "1151237818", "P125", Convert.ToDateTime("19/07/1999"));
-            Contacto contacto3 = new Contacto(1024, "Julian", "Rinaldi", "1131274648", "P126", Convert.ToDateTime("09/04/1982"));
+            Agenda a = new Agenda("Agenda", "Contactos", 10);
+            Utils u = new Utils();
+            u.DesplegarMenu();
 
-            a.AgregarContacto(contacto);
-            a.AgregarContacto(contacto2);
-            a.AgregarContacto(contacto3);
-            for (int i = 0; i< 10; i++) {
-                contacto2.llamar();
-            }
-            a.ListarContactos();
-            Contacto MasFrecuente = a.TraerContactoFrecuente();
-            Console.WriteLine("El contacto mas frecuente es " + MasFrecuente.Nombre + " Con " + MasFrecuente.Llamadas + " llamadas");
-            a.EliminarContacto(1023);
-            a.ListarContactos();
 
-            Console.ReadKey();
+            Contacto c1 = new Contacto(123, "Julian", "Rinaldi", "115", "jbaba", Convert.ToDateTime("08 / 05 / 2001"));
+            c1.llamar();
+            Contacto c2 = new Contacto(124, "Pedro", "Rinaldo", "115", "jbaba", Convert.ToDateTime("08 / 05 / 2001"));
+            Contacto c3 = new Contacto(125, "Marselo", "Rinaldi", "115", "jbaba", Convert.ToDateTime("08 / 05 / 2001"));
+            a.AgregarContacto(c1);
+            a.AgregarContacto(c2);
+            a.AgregarContacto(c3);
+
+
+            bool activo = true;
+
+            do
+            {
+                string choice = Console.ReadLine();
+
+                switch (choice)
+                {
+                    case "1":
+                        a.ListarContactos();
+                        break;
+
+                    case "2":
+                        Contacto c = u.pedirDatos();
+                        a.AgregarContacto(c);
+                        break;
+
+                    case "3":
+                        Console.WriteLine("Ingrese codigo para eliminar contacto");
+                        int codigo = Convert.ToInt32(Console.ReadLine());
+                        a.EliminarContacto(codigo);
+                        break;
+
+                    case "4":
+                        Contacto cont = new Contacto();
+                         cont = a.TraerContactoFrecuente();
+                        Console.WriteLine("El contacto mas frecuente es" + cont.Nombre);
+                        break;
+
+                    case "x":
+                        activo = false;
+                        break;
+
+                }
+
+            } while (activo);
         }
     }
 }

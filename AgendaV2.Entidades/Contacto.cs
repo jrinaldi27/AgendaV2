@@ -22,11 +22,14 @@ namespace AgendaV2.Entidades
         public string Telefono { get => _telefono; set => _telefono = value; }
         public string Direccion { get => _direccion; set => _direccion = value; }
 
-        public DateTime FechaNacimiento  { get => _fechaNacimiento; set => _fechaNacimiento = value; }
+        public DateTime FechaNacimiento { get => _fechaNacimiento; set => _fechaNacimiento = value; }
 
         public int Llamadas { get => _llamadas; }
 
+        public Contacto()
+        {
 
+        }
         public Contacto(long codigo, string nombre, string apellido, string telefono, string direccion, DateTime fechaNacimiento)
         {
             _codigo = codigo;
